@@ -6,12 +6,12 @@ import numpy as np
 	2x - 2y = 2
 --------------
 We know, Ax = b, where A => co-efficient matrix
-											 b => constant-vector
-											 x => unknowns
+		       b => constant-vector
+		       x => unknowns
 """
 A = np.array([[3, -2], [2, -2]])
 b = np.array([7, 2])
 
 solution_vector = np.linalg.solve(A, b)
-print(solution_vector)
+print(solution_vector) # [5, 4]
 
