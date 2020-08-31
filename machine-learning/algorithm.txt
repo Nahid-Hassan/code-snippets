@@ -1,0 +1,82 @@
+Types of Machine Learning
+-------------------------
+	* Supervised vs Unsupervised
+	* Online vs Batch 
+	* Instance-based vs Model-based
+
+Supervised/Unsupervised
+----------------------
+Supervised
+----------
+	* K-Nearest Neighbor's
+	* Linear-regression
+	* Logistic-regression
+	* Support Vector Machine (SVM)
+	* Decision tree and Random Forests
+	* Neural Networks
+
+Note: Some neural networks architectures can be,
+	Unsupervised
+	------------
+		* Auto-encoders
+		* Restricted Boltzmann Machine
+	Semisupervised
+	--------------
+		* Deep Belif Networks
+		* Unsupervised Pretraining
+
+Unsupervised
+------------
+	Clustering
+	----------
+		* K-Means
+		* Hierarchical Cluster Analysis(HCA)
+		* Expectation Maximization
+	Visualization and dimensionality reduction
+	------------------------------------------
+		* Principal Component Analysis (PCA)
+		* Kernel PCA
+		* Local Linear Embedding (LLE)
+		* t-distributed Stochastic Neighbor Embedding (t-SNE)
+	Association rule learning
+	-------------------------
+		* Apriori
+		* Eclat
+
+* Anomaly detection(remove outliers)
+
+Association rule
+----------------
+	People who,
+		Purchase barbecue Sauce --> also by ---> potato chips ---> and also tend to buy ---> steak
+		A ------> B --------> C -------> D
+
+Semisupervised
+--------------
+	* Goole Photos
+	* RBM
+
+Reinforcement Learning
+----------------------
+	* Agent learn from environment based on reward.
+	* Ex: Robot walks, DeepMind Alpha Go.
+
+Batch Learning
+--------------
+	* Offline learning
+	
+			lots-of-data ----> training ------> Production
+
+Online Learning
+---------------
+	* Mini batch learning or learn incrementally from a stream of incoming data.
+
+Instance-based Learning
+--------------------------------------
+This is called instance-based learning: the system learns the examples by heart, then
+generalizes to new cases using a similarity measure
+
+Model-based Learning
+--------------------
+Another way to generalize from a set of examples is to build a model of these exam‐
+ples, then use that model to make predictions. This is called model-based learning.
