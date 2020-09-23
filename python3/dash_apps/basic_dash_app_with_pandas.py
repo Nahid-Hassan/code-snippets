@@ -13,19 +13,33 @@ app.layout = html.Div([
     html.H1('Hello SciPy'),
 
     dcc.Graph(
-        id = 'graph',
-        figure = {
-            'data' : [
+        id='graph',
+        figure={
+            'data': [
                 go.Scatter(
-                    x = df.Year,
-                    y = df.gdp,
-                    text = 'Year',
-                    type = 'scatter',
-                    mode = 'markers'
+                    x=df.Year,
+                    y=df.gdp,
+                    text='Year',
+                    type='scatter',
+                    mode='markers'
+                )
+            ],
+            'data1': [
+                go.Scatter(
+                    x=df.Country,
+                    y=df.gdp,
+                    text='Year',
+                    type='scatter',
+                    mode='markers'
                 )
             ]
+
         }
-    )
+    ),
+    dcc.Markdown('''
+        The first part of a Dash apps in the 'layout' of the app, or what the app looks like.
+    '''),
+
     # DataTable(df)
 ])
 
