@@ -22,14 +22,18 @@ app.layout = html.Div([
         ],
     ),
 
-    dcc.RangeSlider(
-        min=1,
-        max=10,
-        step=.5,
-        value=[3, 7],
-        marks={i: str(i) for i in range(10)}
-    )
 
+    html.Label('This is checkbox'),
+    html.Br(),
+    dcc.Checklist(
+        options=[
+            {'label': 'Bangladesh', 'value': 'BD'},
+            {'label': 'Pakistan', 'value': 'PAK'},
+            {'label': 'Turosko', 'value': 'Turky'},
+            {'label': 'South Africa', 'value': 'SA', 'disabled': True},
+        ],
+        values=['BD', "PAK"]
+    )
 ])
 
 app.run_server(debug=True, port=8000)

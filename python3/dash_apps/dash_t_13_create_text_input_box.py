@@ -22,13 +22,14 @@ app.layout = html.Div([
         ],
     ),
 
-    dcc.RangeSlider(
-        min=1,
-        max=10,
-        step=.5,
-        value=[3, 7],
-        marks={i: str(i) for i in range(10)}
-    )
+
+    html.Br(),
+    html.Br(),
+
+    html.Div([
+        html.Label('This is input box'),
+        dcc.Input(placeholder='Enter your name', type='text', value='')
+    ])
 
 ])
 
