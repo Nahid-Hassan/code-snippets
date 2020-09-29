@@ -1,0 +1,156 @@
+** The general form of a class:
+   ----------------------------
+
+    class classname {
+        type instance-variable1;
+        type instance-variable2;
+        type instance-variable3;
+        .......................
+        type instance-variablen;
+
+        type method1(parameter-list) {
+            //body of method1....
+        }
+        type method2(parameter-list) {
+            // body of method2....
+        }
+        .............................
+        .............................
+        type methodn(parameter-list) {
+            // body of methodn....
+        }
+    }
+
+    Instance-variable: The data, or variable, defined within a class are called instance variables.
+    Method:
+
+    Method and variable are member of the class.......
+
+    * Declaring an objects:
+        Example:
+            Box box = new Box() ---> this is really happen....two step process
+            firstly 
+            Box box; // Declaring reference of the variable
+            box = new Box(); // allocate memory(dynamically) for the box boject
+
+
+** A closer look at new:
+   ---------------------
+    class_name var = new class_name()
+
+                statement                                    effect
+                ---------------------------------------------------------
+                Box box;                     create a reference box for box ....
+
+
+                box = new Box()              box --> width, height, dept.... (box object)
+
+
+    A class is a logical construct. An object has physical reality.
+    It is important to understant that new allocates memroy for an object during runtime...
+
+** Assigning object reference variables:
+   -------------------------------------
+   Box b1 = new Box();
+   Box b2 = b1; // now b1 and b2 are point same Box object....any change of b1 effect b2 and vice-versa
+
+   What happen in this below situation??
+   Box b1 = new Box();
+   Box b2 = b1;
+
+   ...............
+
+   b1 = null;
+
+   Here, b1 has been set to null, but b2 still points to the original object.
+
+** Return Value:
+
+** Adding method in class:
+   ----------------------
+
+    general formatation:
+    -------------------
+    return-type method-name(parameter-list) {
+        // code body...
+
+
+        return something......
+    }
+
+    accessing from outside from the method....
+
+    return-type variable-name = instance-object.method-name(agrument-list)
+
+** Costructor:
+   -----------
+   A constructor initializes an object immediately upon creation...
+   constructor has no retrun type it is called immediately when new operator complete
+   object creation....
+
+    // no return type not parameter
+    Box() {
+        // code 
+
+        // By default constructor set instance-variable is -> null, false, zero
+    }
+
+    // with parameter
+    Box(double width, double depth, double height) {
+        // code
+    }
+
+** The this keyword:
+   -----------------
+    Sometimes a method will need to refer to the object that invoked it. To allow this, Java
+    defines the this keyword. this can be used inside any method...to refer the current object.
+
+    Example:
+        // in below example it is very good to use this.... but if you not use this the imidiate...
+        below example...no problem ... occured....
+        Box(double w, double h, double d) {
+            this.height = h;
+            this.width = w;
+            this.depth = d;
+        }
+        // but in this example some problem are occured..
+        Box(double width, double height, double depth) {
+            height = height;
+            width = width;
+            depth = depth; 
+        }
+        // in that case the java cannot distinguish.... which height.... is in this class 
+        // which is parameter.
+
+        // to solve this problem you need to use 'this' keyword
+        Box(double width, double height, double depth) {
+            this.height = height;
+            this.width = width;
+            this.depth = depth; 
+        }
+** Instance variable hiding:
+   ------------------------
+   :When local variable has the same name as instance variable, the local variable hide the
+   instance variable.
+
+   // how solve this...prolem...avobe example shown.................
+
+** Garbage Collection:
+   ------------------
+   :Java handels deallocation for automatically...this is called garbage collection..
+   different runtime environment it implements differently but you don't need to worry
+   about that....you don't need to explicitly program for that...
+
+   in C/C++ we use free()  method...for deallocation for memory.
+
+** The finalize() method:
+   ---------------------
+    for garbage collection...   
+    inside main() { 
+         system.gc();
+    }   
+    outside class {
+        protected void finalize() {
+        // code
+        }
+    }

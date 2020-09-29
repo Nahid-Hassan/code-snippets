@@ -1,0 +1,262 @@
+** Java has strongly typed language: 
+   -------------------------------
+   * This is for java's safety and robustness.
+   * Any type mismatches are errors that must be corrected before the compiler 
+     will finish compiling the class.
+    
+** The primitive data types:
+   ------------------------
+   Java identifies eight(8) primitive types of data.
+
+   * Integers: byte, short, int and long ---> whole valued signed numbers.
+   * Floating-poin numbers: float and double --> Numbers with fractional precision.
+   * Character: char --> Character set liek letters and numbers.
+   * Boolean: boolean --> true, false.
+
+
+   ** The primitive type represent single values-not complex objects.
+
+** Integers:
+    * Java doesn't support unsigned: positive only Integers.
+    * Java manage high order(unsigned integers) bit by adding a special "UNSIGNED RIGHT SHIFT"
+
+    Name          size                   Range
+    ------------------------------------------------------------------------
+    long           64        -9,223,372,854,755,808 to 9,223,372,854,755,807
+    int            32        -2,147,483,648 to 2,147,483,647       
+    short          16        -32,768 to 32.767
+    byte           8         -128 to 127
+
+    byte: byte is useful when you are working with a stream of data from a network or file.
+          also useful for working with raw binary data.
+
+        declare byte variable:
+            byte b, c;
+
+    short: least used java type.
+        declare a short variable:
+            short s, t;
+
+    int: most used java type.
+    long: when you need to work with a large number but less than the value(10^18).
+
+
+** Floating-Points types:
+   ----------------------
+    Floating-point numbers, also known as real numbers.
+    It is used as an example, calculations such as square root, or transcendentals such as sine and cosine. Java implements the standard(IEEE-754)
+
+    Name          size                   Range
+    ------------------------------------------------------------------------
+    double         64              4.9e-324 to 1.8e+308
+    float          32              1.4e-045 to 3.4e+038
+
+    float: single-precision value or low precision number.
+    double: double-precision value or high precision number.
+
+    some function when you needs to floating point types:
+        sin(), cos(), sqrt()
+
+** Characters:
+   -----------
+   In Java, the data type used to store characters is char.
+   char in C/C++ is not the same as Java.
+   C/C++ --> char is 8-bit long. However in C/C++, 8-bit, for only ASCII values (0 to 127).
+
+   But, in Java,
+   Java --> char is 16-bit long(0 to 65,536). Because java uses Unicode to represent characters. Unicode defines fully international character set that can represent all of the characters found in all human language. 
+
+   There is no negative charas.
+
+   ** To know more about Unicode. Please visit https://www.unicode.org
+
+
+** Booleans:
+   ---------
+   Java has a primitive type, called boolean, for logical values(true and false).
+   This is the type returned by all relational operators.
+
+
+** A closer look at literals:
+    It is easier to understand java literals with examples.
+    so you see 'Literals*.java' example in this folder.
+
+
+** Variables:
+   ___________
+   The variable is the basic unit of storage in a Java program. A  variable is defined by the combination of an identifier, a type, and an optional initializer. In addition, all variables have a scope, which define their visibility, and a lifetime. These elements are examined next.
+
+   Declaring a variable:
+        type identifier [ = value] [,identifier [=value]...];
+
+        Here, the type is one of Java's atomic types or another name of a class or interface.
+        the identifier is the name of a variable.
+
+        [= value] is for initializing the variable. 
+
+        Example:
+            int a, b, c;
+            int d = 10, e, f = 10L;
+
+            byte z = 10L;
+            double pi = 3.1416;
+            char x = 'X';
+
+    Dynamic Initialization:
+        // c is Dynamically initialize.
+        double c = Math.sqrt(a * a * + b * b);
+
+** The scope and lifetime of a variables:
+   _____________________________________
+   A block defines a scope. 
+    block#1 {
+        int a;
+        double d;
+        char ch;
+        byte b;
+    
+        b = 10; // it's okay. b is in scope
+        s = 932; // s is undefined. you cannot access s from block#2
+    }
+
+    block#2 {
+        short s;
+        a = 10; // a is undefined. you cannot access a from block#1 
+        s = 112; // it's okay. s is in scope.
+    }
+
+    Thus each time you create block you can create an scope. A scope determines what objects are 
+    visibles to other parts of your program. It also determines the lifetime of those objects.
+
+
+    // scope can be nested. each time you create a block of code, you are creating a new scope
+    // nested scope.
+
+    /**
+    * when it happen outer scope encloses the inner scope.
+    * that means that objects declared in the outer scope will be visible to code within the 
+    * inner scope. However, the reverse is not true;
+    */
+    
+    // demonstrate idea
+    block#11 {
+        int a; // global scope // most outer scope
+
+        // inner scope
+        block#12 {
+            int c; // local scope, but global for block#13
+            a = 10; // okay, Because a is already in block#11 and block#12 is in block#11 
+
+            // most innerscope
+            block#13 {
+                int d; local scope
+            }
+            d = something; //d cannot accessible. 
+        }
+        c = 10; // not okay, Because c is now outside of block#12
+                // or we can say hence c is in local scope variable so we cannot access it from 
+                // global scope
+    }
+
+    The scope rules provide the foundation for encapsulation.
+    
+    ** Note: to understand the effect of nested block in code please see the 'Scope.java' program
+
+    With in block, variables are declared at any point, but are valid only after they are declared.
+
+    // this fragment is wrong!
+    count = 10;
+    int count; // opps! cannot use count before it is declared.
+
+    ** Note: Here is another important point to remember: variables are created when their scope is 
+    entered, and destroyed when their scope is left.
+
+    ** Note: Althouh blocks are nested you cannot declare a variable to have the same name as one 
+    in an outer scope. 
+
+    Example:
+        // This program will not compile
+        
+        class ScopeError {
+            public static void main(String[] args) {
+                int bar = 1;
+
+                if (bar == 1) { // create a new scope
+                    int bar = 2; // compile-time error - bar already defined. 
+                }
+            }
+        }
+    ** same example you found in 'ScopeError.java' file in this folder.
+
+** Type Conversion and Casting:
+   ----------------------------
+   * If two types are compatible then java will perform conversion automatically.
+   For Example:
+        long  = int conversion;
+
+    Implicit conversion: automatically convert by java. (compatible)
+    Explicit conversion: you need to use CAST. (for incompitable)
+
+    * Java automatic conversion:
+        * Two types are compatible.
+        * The destination type is larger than the source type.
+
+    * Casting incompatible:
+        (target-type) value;
+        
+        example:
+            int a;
+            byte b;
+            .............
+            .............
+            b = (byte) a;
+        
+        another way:
+            truncation: floating point to integer type conversion.
+
+            example:
+                float f = 1.23;
+                int b;
+                ............
+                b = (int) f; 
+                print(b) // 1 truncation floating point part or after (.) part
+
+** Automatic Type Promotion in Expressions:
+   ----------------------------------------
+   byte a = 40, b = 50, c = 200;
+   int d = a * b / c; //the result of intermediate term a * b easily exceeds the Range
+   of either of its byte operands. To handle this kind of problems java automatically
+   promotes each byte, short or char to int when evaluating the expression.
+
+   byte b = 50
+   b = b * 2 // Error!! Cannot assign an in to a byte.
+   The code is attempting to store 50 * 2, a perfectly valid byte value, back into a byte 
+   variable. However, because the operands are automatically promoted in int when expression
+   are evaluated.
+
+   To solve this Error:
+   b = (byte) (b * 2) // right
+
+   Example:
+   if -->   f->float, b->byte, i->int, c->char, d->double, s->short
+            
+            double result = (f * b) + ( i / c) - (d * s);
+            First step -->
+            (f * b) --> float
+            (i / c) --> int 
+            (d * s) --> double
+
+            Second step -->
+            float + int --> float
+
+            third step -->
+            float + double --> double
+
+            Final promotion is double
+
+** Arrays:
+   ------
+    An array is a group of like-typed variable that are referred to by a common name. Arrays
+    of any type can be created and may have one or more dimensions. A specific element in an
+    array is accessed by its index. Arrays offers a covenient means of grouping related information.
+

@@ -1,0 +1,31 @@
+All contents for java exam: Book(Sheildt)
+---------------------------------
+1) chapter-1 to chapter- 9 
+2) 10, 11, 13, 14, 23,24,25,26, 31, 32.
+
+important topics:
+-----------------
+* class, inheritance, package, interface
+* exception handling, multi-threading
+* Generics
+* Event handling, AWT
+* Layout manager, swing
+* Java IO/ I/O applet
+
+
+Design pattern: (Ekta thakbei...)
+-----------------------
+1) Factory
+2) Abstract Factory
+3) Singleton
+4) Prototype
+5) Builder
+6) Adapter
+7) Bridge
+8) Chain of Responsibility
+9) Observer
+10) Command
+
+link: https://www.javatpoint.com/design-patterns-in-java
+link: https://www.tutorialspoint.com/design_pattern/index.htm
+link: https://drive.google.com/open?id=1c2T3Di-4NvwkT_t_48lhfaUMPtf5CqUA

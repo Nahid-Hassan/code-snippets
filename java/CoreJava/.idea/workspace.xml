@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3034e61-cbfa-4c6c-b4d5-f01698f867a1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CoreJava" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WMoS3GeTUokk3AuvZbCauyoZoe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="AnonymousObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroductionToJava.AnonymousObject.AnonymousObject" />
+      <module name="CoreJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IntroductionToJava.AnonymousObject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroductionToJava.StringPack.Demo" />
+      <module name="CoreJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IntroductionToJava.StringPack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroductionToJava.PassingParameterAsObject.Main" />
+      <module name="CoreJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IntroductionToJava.PassingParameterAsObject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroductionToJava.Package.Main" />
+      <module name="CoreJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IntroductionToJava.Package.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IntroductionToJava.EqualOperator.Test" />
+      <module name="CoreJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IntroductionToJava.EqualOperator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.AnonymousObject" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3034e61-cbfa-4c6c-b4d5-f01698f867a1" name="Default Changelist" comment="" />
+      <created>1578968820074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578968820074</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="435" y="24" width="476" height="743" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579085474485">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="435" y="24" width="476" height="743" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.24.1366.744@0.24.1366.744" timestamp="1579085474485" />
+    <state x="567" y="177" width="514" height="483" key="FileChooserDialogImpl" timestamp="1578969979668">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="567" y="177" width="514" height="483" key="FileChooserDialogImpl/0.24.1366.744@0.24.1366.744" timestamp="1578969979668" />
+    <state width="414" height="557" key="GridCell.Tab.0.bottom" timestamp="1579086275056">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state width="414" height="557" key="GridCell.Tab.0.bottom/0.24.1366.744@0.24.1366.744" timestamp="1579086275056" />
+    <state width="414" height="557" key="GridCell.Tab.0.center" timestamp="1579086275056">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state width="414" height="557" key="GridCell.Tab.0.center/0.24.1366.744@0.24.1366.744" timestamp="1579086275056" />
+    <state width="414" height="557" key="GridCell.Tab.0.left" timestamp="1579086275056">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state width="414" height="557" key="GridCell.Tab.0.left/0.24.1366.744@0.24.1366.744" timestamp="1579086275056" />
+    <state width="414" height="557" key="GridCell.Tab.0.right" timestamp="1579086275056">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state width="414" height="557" key="GridCell.Tab.0.right/0.24.1366.744@0.24.1366.744" timestamp="1579086275056" />
+    <state x="240" y="24" key="SettingsEditor" timestamp="1579081492641">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="240" y="24" key="SettingsEditor/0.24.1366.744@0.24.1366.744" timestamp="1579081492641" />
+    <state x="309" y="223" key="com.intellij.ide.util.TipDialog" timestamp="1579070425253">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="309" y="223" key="com.intellij.ide.util.TipDialog/0.24.1366.744@0.24.1366.744" timestamp="1579070425253" />
+    <state x="0" y="24" width="732" height="744" key="find.popup" timestamp="1579028743319">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="0" y="24" width="732" height="744" key="find.popup/0.24.1366.744@0.24.1366.744" timestamp="1579028743319" />
+    <state x="427" y="269" width="750" height="302" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1579081294964">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="427" y="269" width="750" height="302" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.24.1366.744@0.24.1366.744" timestamp="1579081294964" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/IntroductionToJava/StringPack/Demo.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

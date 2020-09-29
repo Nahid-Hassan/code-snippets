@@ -1,0 +1,87 @@
+Java programs are a collection of whitespace, identifiers, literals, comments, operators
+separators and keywords.
+
+WHITESPACE: Java is free-form language. This means that you do not need to follow any
+    special indentation rules(like python).
+    You can write a whole programs in a line in java.
+    
+    In java, whitespace is a space, tab, or newline.
+
+    Note: There was at least one whitespace character between each token.
+
+IDENTIFIERS: Same as c/c++ variable naming convention.
+        Right identifiers:
+            1. UpperCamelCase Style: AvgTemp, CountPeople
+            2. lowerCamelCase Style: avgTemp, countPeople
+            3. In General Style: count, a4, $test, this_is_ok
+
+        Wrong identifiers:
+            2count --> Identifiers must not begin with a number.
+            high-temp, Not/Ok --> You cannot use any special purpose character without using $
+                                  to declare an identifiers.
+            'high temp' --> No space in identifier name.
+
+        ** Note: Java is case-sensitive that's why VALUE and value is not same.
+
+    ** Note: Beginning with JDK 8, the use of underscore by itself as an identifier is not 
+             recommended.
+
+LITERALS: A constant value in java is created by using a literal representation of it.
+        Example: 100, 89.2, 'X', ture, "That is a test"        
+
+    A literal can be used anywhere a value of it's type is allowed.
+
+COMMENTS: 
+    In java there is 3 types of comments.
+        1. Single line comment: 
+            Example: 
+                // This is a single line comment example.
+        2. Multiline comment:
+            Example:
+                /*
+                    This is an Multiline 
+                    comment
+                    Example.
+                */
+        3. Documentation comment: This type of comment is used to produce an HTML file that 
+            documents your program. 
+            Example:
+                /**
+                * This is a documentation comment
+                * example.
+                */
+SEPARATORS: 
+    ----------------------------------------------------------------------------------------------
+    | Symbol  |    Name      |          Purpose                                                  |
+    ----------------------------------------------------------------------------------------------
+    |    ()   | Parentheses  | Used to contain list of parameters in method                      | 
+    |         |              | identification and invocation.                                    |
+    ----------------------------------------------------------------------------------------------
+    |    {}   | Braces       | Used to contain the values for initialized arrays                 | 
+    |         |              | Also used to define a block of code, class,method                 |
+    ----------------------------------------------------------------------------------------------
+    |    []   | Brackets     | Used to declare an array types                                    | 
+    |         |              | Also used when dereferencing array values                         |
+    ----------------------------------------------------------------------------------------------
+    |    ;    | Semicolon   | Terminates statements                                              |
+    ----------------------------------------------------------------------------------------------
+    |    ,    | Coma        | Separate consecutive identifiers.                                  |
+    ----------------------------------------------------------------------------------------------
+    |    .    | Period      | Used to Separate package names from subpackages and classes.       |           |         |             | Also used to separate a variable, method from a reference variable |
+    ----------------------------------------------------------------------------------------------
+    |    ::   | Colons      | Used to create a method or constructor and destructor.             |
+    ----------------------------------------------------------------------------------------------
+
+
+JAVA KEYWORDS:
+    abstract, assert, boolean, break, byte, case, catch, char, class, const, continue, default, do,
+    double, else, enum, extends, final, finally, float, for, goto, if, implements, import, instanceof,
+    int, interface, long, native, new, package, private, protected, public, return, short, static,
+    strictfp, supper, switch, synchronized, this, throw, throws, transient, try, void, volatile, while
+
+
+    ** Note: These keywords cannot be used as identifiers. Thus, they cannot be uesd as names for a
+       variable, class or methods.
+    
+    ** Note: The keywords const and goto are reserved but not used.
+    ** true, false, null are some addtion keywords.

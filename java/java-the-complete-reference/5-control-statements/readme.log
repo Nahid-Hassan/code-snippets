@@ -1,0 +1,37 @@
+** Control Statements Categories:
+   -----------------------------  
+    * Selection 
+    * Iteration
+    * Jump
+** Selection:
+   ---------
+   : Selection statements allow your programs to choose different paths of execution based upon the 
+   outcome  of an expression or the state of a variable. 
+
+   Example: 
+        if(...codition...) {
+            // code
+        } else if (...condition...)
+            // code
+        ....................... else if ................ 
+        ....................... else if ................
+        } else {
+            // code
+        }
+
+** Iteration:
+   ----------
+   : Iteration statements enable program execution to repeat one or more statements.
+     a linear fashion.   
+
+   for(initialization ; condition ; increase/decrease) {
+        //code
+   }
+
+   while(condition) {
+        //code
+   }
+
+** Jump:
+   -----
+   : Jump statements allow your program to execute in a non-linear fashion.
