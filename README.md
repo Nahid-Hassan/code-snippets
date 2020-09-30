@@ -1,2 +1,2 @@
 # code-snippets
-Python, ML, R, Django, HTML, CSS, JavaScript, and Database code  sinppets.
+Python, C++, C, Java, ML, R, Django, HTML, CSS, JavaScript, Tensorflow, Keras, Pandas, Matplotlib, Dash and Database code  sinppets.
