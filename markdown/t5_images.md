@@ -31,7 +31,7 @@
     Now, [ ![]() ]() - > link[image]. Or we can say that image as a link.
 
 
-[![image](http://unplash.it/50/50?image=1000)](http://unplash.it/500/500?image=1000)
+[![image](https://picsum.photos/seed/picsum/20/20)](https://picsum.photos/seed/picsum/1200/1000)
 
     [![image](http://unplash.it/50/50?image=1000)](http://unplash.it/500/500?image=1000)
 
@@ -39,6 +39,8 @@
 
     or you can use...
     [<img src='url' >](url). You see the same effect of this [![]()]()
+
+[<img src="https://picsum.photos/seed/picsum/10/10">](https://picsum.photos/seed/picsum/1360/768)
 
 ## Example - 4
     This example is not working with Github. But if you write a blog or something like this you can use this method....
