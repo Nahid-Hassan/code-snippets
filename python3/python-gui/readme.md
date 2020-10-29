@@ -5,7 +5,9 @@
 Tk and Tkinter apps can run on most `Unix` platforms. This also works on `Windows` and `Mac OS X`.
 The module Tkinter is an interface to the Tk GUI toolkit.
 
-## Base
+## This `readme.md` file contains series of tkinter widget and functionalities
+
+### Base
 
 ```py
 from tkinter import *
@@ -28,3 +30,40 @@ root.mainloop()
 ```
 
 ![Tkinter Basic Example]()
+
+### Grid Widget
+
+```py
+# Creating a Label Widget
+myLabel1 = Label(root, text='Hello World1')
+myLabel2 = Label(root, text='Hello World2')
+
+# Using grid method(row, columns)
+myLabel1.grid(row=0, column=0)
+myLabel2.grid(row=1, column=5)
+
+# You can do it other way
+# myLabel = Label(root, 'example').grid(row=0, column=0)
+```
+
+### Button Widget
+
+```py
+# Button with label/text 'click me'
+myButton = Button(root, text='click me')
+
+# made click disable and override padx and pady for change default button size
+myButton = Button(root, text='click me', state=DISABLED, padx=50, pady=40)
+
+# set the command argument and make button interactive
+def myClick():
+    my_label = Label(root, text="Clicked")
+    my_label.pack()
+
+myButton = Button(root, text='click me', command=myClick)
+# we cannot use myClick(). Because pass with () parenthesis already call the function,
+# that we don't want
+
+# Set fg and bg
+myButton = Button(root, text='click me', command=myClick, fg="blue", bg="red")
+```
