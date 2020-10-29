@@ -1,13 +1,17 @@
-# from tkinter import everything
 from tkinter import *
 
-# Create Tk object
+# start: create tk object
 root = Tk()
 
-# Creating a Label Widget
-myLabel = Label(root, text='Hello World')
+# set title
+root.title('Tkinter Basic Example')
 
-# Showing it into the screen
+# -------------- Create Widget---------------------
+myLabel = Label(root, text="This a Label")
+
+# ------------------Show Widget---------------
 myLabel.pack()
 
+
+# end: run mainloop
 root.mainloop()
