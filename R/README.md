@@ -107,6 +107,76 @@ Integer division always return the floor value
 
 #### Note: we cannot add `string and integer` numbers and also `string and string`
 
+### Variables
+
+![variable-1](images/variable-1.png)
+
+![variable-2](images/variable-2.png)
+
+![variable-3](images/variable-3.png)
+
+### R is Dynamically Type Language
+
+![variable-4](images/variable-4.png)
+
+![variable-5](images/variable-5.png)
+
+#### Declare Variable
+
+```r
+age <- 10
+marks1 <- 20
+subject_name <- 'R'
+
+# cannot use
+# $subject_name <- 'Java'
+# 3name <- 'Alex'
+```
+
+#### Variable Properties
+
+```sh
+age <- 10
+typeof(age) # double
+mode(age) # numeric
+storage.mode(age) # double
+class(age) # numeric
+
+subject_name = 'R'
+typeof(subject_name) # character
+mode(subject_name) # character
+storage.mode(subject_name) # character
+class(subject_name) # character
+
+> marks1 <- 20.10
+> typeof(marks1)
+[1] "double"
+> mode(marks1)
+[1] "numeric"
+> storage.mode(marks1)
+[1] "double"
+> class(marks1)
+[1] "numeric"
+
+> flag = TRUE
+> typeof(flag)
+[1] "logical"
+> mode(flag)
+[1] "logical"
+> storage.mode(flag)
+[1] "logical"
+> class(flag)
+[1] "logical"
+```
+
+### Variable Expression
+
+```r
+x <- 10
+y <- 20
+sum = x + y # expression
+```
+
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
 [2]: https://youtu.be/NVyOEwOJgNQ
