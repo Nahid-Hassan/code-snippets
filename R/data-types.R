@@ -28,5 +28,8 @@ print(y)
 class(y)
 is.integer(y)
 
-# But if we pass string -> ex. name as input it raise an error
-y <- as.integer('Jhon') # This raise an error
+# But if we pass string -> ex. name as input
+y <- as.integer('Jhon')
+print(y)
+class(y)
+is.integer(y)
