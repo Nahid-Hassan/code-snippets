@@ -245,3 +245,24 @@ I had same problem in #51 but fixed in #86 @github_user_name @mursalin117
 # Github markdown mastering link
 [Github markdown mastering](https://guides.github.com/features/mastering-markdown/)
 [Markdown master](http://agea.github.io/tutorial.md/)
+
+# Matrix in Markdown
+
+$$
+\left(\begin{array}{cc}
+2 & 3\\
+10 & 1
+\end{array}\right)
+
+\left(\begin{array}{cc}
+a\\
+b
+\end{array}\right)
+
+=
+
+\left(\begin{array}{cc}
+8\\
+13
+\end{array}\right)
+$$
