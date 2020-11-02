@@ -177,6 +177,83 @@ y <- 20
 sum = x + y # expression
 ```
 
+### List of Keywords
+
+![Keywords in R](images/keywords-in-r.png)
+
+We cannot able to use keyword as variable name.
+
+### Basic Data Types
+
+```r
+x <- 10.23
+x
+# To know variable data types 
+class(x) #numeric 
+```
+
+```r
+> x <- 10
+> x
+[1] 10
+> # To know variable data types 
+> class(x)
+[1] "numeric"
+```
+
+```r
+> is.integer(x)
+FALSE
+```
+
+Now to create a integer variable in R programming language
+
+```r
+ y <- as.integer(10) 
+> class(y)
+[1] "integer"
+> is.integer(y)
+[1] TRUE
+> y <- as.integer(10)
+> print(y)
+[1] 10
+> class(y)
+[1] "integer"
+> is.integer(y)
+[1] TRUE
+
+> y <- as.integer(10.35)
+> print(y)
+[1] 10 # truncated floating point portion
+> class(y)
+[1] "integer"
+> is.integer(y)
+[1] TRUE
+
+# Create integer variable using `L`
+y <- 105L
+print(y) # 105
+class(y) # integer
+is.integer(y) # true
+
+# We can also pass string as input -> numeric
+y <- as.integer('10.35') # it works because `10.35` is numeric value
+print(y)
+class(y)
+is.integer(y)
+
+> # But if we pass string -> ex. name as input
+> y <- as.integer('Jhon')
+Warning message:
+NAs introduced by coercion
+> print(y)
+[1] NA
+> class(y)
+[1] "integer"
+> is.integer(y)
+[1] TRUE
+```
+
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
 [2]: https://youtu.be/NVyOEwOJgNQ
