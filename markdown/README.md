@@ -246,6 +246,25 @@ I had same problem in #51 but fixed in #86 @github_user_name @mursalin117
 [Github markdown mastering](https://guides.github.com/features/mastering-markdown/)
 [Markdown master](http://agea.github.io/tutorial.md/)
 
+
+# Collapsible Markdown
+
+<details><summary>Click Me</summary>
+<p>
+
+Yes, even hidden codeblocks!
+
+```python
+def main():
+    print("Test Python")
+
+if __name__ == "__main__":
+    main()
+```
+
+</p>
+</details>
+
 # Matrix in Markdown
 
 $$
