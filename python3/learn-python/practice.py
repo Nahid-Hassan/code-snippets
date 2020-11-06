@@ -7,22 +7,23 @@ start_time = time.time()
 
 
 
-# write your code here
-
-names = ['Nahid', "Meem", "Mahin", "Bristy"]
-
-# for name in names:
-#     # print("Hello there, " + name)
-#     print(''.join(["Hello there ", name]))
-
-print(', '.join(names))
-
-# end of code
 
 
 
 
+mport httplib
+except:
+    import http.client as httplib
 
+    def checkInternetHttplib(url="www.google.com", timeout=3):
+        conn = httplib.HTTPConnection(url, timeout=timeout)
+            try:
+                    conn.request("HEAD", "/")
+                            conn.close()
+                                    return True
+                                        except Exception as e:
+                                                print(e)
+                                                        return False
 
 
 end_time =time.time()
