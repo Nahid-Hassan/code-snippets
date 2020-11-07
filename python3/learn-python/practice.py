@@ -1,30 +1,12 @@
-import time
+import collections
+import sys
 
-start_time = time.time()
+def main(letters, words):
+        d = collections.defaultdict(list)
+        print(d)
 
+        print(letters)
+        print(words)
 
-
-
-
-
-
-
-
-
-mport httplib
-except:
-    import http.client as httplib
-
-    def checkInternetHttplib(url="www.google.com", timeout=3):
-        conn = httplib.HTTPConnection(url, timeout=timeout)
-            try:
-                    conn.request("HEAD", "/")
-                            conn.close()
-                                    return True
-                                        except Exception as e:
-                                                print(e)
-                                                        return False
-
-
-end_time =time.time()
-print(start_time - end_time)
+if __name__ == "__main__":
+    main(sys.argv[1], sys.argv[2:])
