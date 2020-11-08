@@ -33,3 +33,11 @@ y <- as.integer('Jhon')
 print(y)
 class(y)
 is.integer(y)
+
+
+x <- 4 + 3i # complex
+x <- T      # logical T: TRUE
+x <- F      # logical F: FALSE
+x <- "Jack" # character
+x <- as.character(3.75) # convert numerical to character
+is.character(x) # TRUE

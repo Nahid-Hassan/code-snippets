@@ -254,6 +254,72 @@ NAs introduced by coercion
 [1] TRUE
 ```
 
+**Other Types**:
+
+```r
+x <- 4 + 3i # complex
+x <- T      # logical T: TRUE
+x <- F      # logical F: FALSE
+x <- "Jack" # character
+x <- as.character(3.75) # convert numerical to character
+is.character(x) # TRUE
+```
+
+### Variable Assignment
+
+![variable-assignment](images/variable-assignment.png)
+
+```r
+x <- 10 # assign x to 10
+y = 30 # assign y to 30
+assign('z', 50) # assign z to 50
+
+70 -> w # assign 70 in variable w
+
+# multiple assignment at same time
+a <- b <- c <- d <- 15
+```
+
+![predefined constant](images/predefined-constant.png)
+
+```sh
+> pi_value = pi
+> pi_value
+[1] 3.141593
+> small_letters = letters
+> small_letters
+ [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s"
+[20] "t" "u" "v" "w" "x" "y" "z"
+> capital_letters = LETTERS
+> capital_letters
+ [1] "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S"
+[20] "T" "U" "V" "W" "X" "Y" "Z"
+> month_name = month.name
+> month_name
+ [1] "January"   "February"  "March"     "April"     "May"       "June"     
+ [7] "July"      "August"    "September" "October"   "November"  "December" 
+> month_name_abbr = month.abb
+> month_name_abbr
+ [1] "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"
+```
+
+### Comments in R Language
+
+`# character is used as a comment in R language`
+
+### Relational Operator
+
+![relational operator](images/relational-operator.png)
+
+```sh
+> 'nahid' != 'hassan'
+[1] TRUE
+> !'nahid'
+Error in !"nahid" : invalid argument type
+```
+
+![logical operators](images/logical-operators.png)
+
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
 [2]: https://youtu.be/NVyOEwOJgNQ
