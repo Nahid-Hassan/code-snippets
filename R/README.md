@@ -377,6 +377,33 @@ Error in !"nahid" : invalid argument type
 
 ### Replicate Function
 
+```sh
+> # number replicate
+> x <- rep(1, times=4) # 1 1 1 1
+> x
+[1] 1 1 1 1
+> # character replicate
+> c <- rep('z', times=5)
+> c
+[1] "z" "z" "z" "z" "z"
+> # sequence replicate
+> x = 1 : 3
+> y = rep(x, times=3)
+> y
+[1] 1 2 3 1 2 3 1 2 3
+> # each arguments
+> x = 1 : 3
+> y = rep(x, each=3) # each element assign 3 times
+> y
+[1] 1 1 1 2 2 2 3 3 3
+```
+
+### Control Structures
+
+![control structures](images/control-sturctures.png)
+
+### if-else 
+
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
 [2]: https://youtu.be/NVyOEwOJgNQ
