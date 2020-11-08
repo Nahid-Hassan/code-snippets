@@ -320,6 +320,63 @@ Error in !"nahid" : invalid argument type
 
 ![logical operators](images/logical-operators.png)
 
+### Sequence
+
+```sh
+> x = 1: 10
+> x
+ [1]  1  2  3  4  5  6  7  8  9 10
+> y = 10: 1
+> y
+ [1] 10  9  8  7  6  5  4  3  2  1
+> x = 1 : 10 * 10 # first create the sequence then multiply with 10
+> x
+ [1]  10  20  30  40  50  60  70  80  90 100
+> x = 1: 10 - 1 # first create the sequence then subtract by 1
+> x
+ [1] 0 1 2 3 4 5 6 7 8 9
+> x = 5 # assign x to 5
+> 1: x # show 1 to 5 in the console
+[1] 1 2 3 4 5
+> 1 : x - 1
+[1] 0 1 2 3 4
+> 1 : (x - 1)
+[1] 1 2 3 4
+> # create a sequence using seq(start_point, end_point)
+> x <- seq(1, 5)
+> x
+[1] 1 2 3 4 5
+> x = seq(10) # by default begin from 1
+> x # 1.........10
+ [1]  1  2  3  4  5  6  7  8  9 10
+> x = seq(from=5, to=2)
+> print(x)
+[1] 5 4 3 2
+> x = seq(from=1, to =5)
+> print(x)
+[1] 1 2 3 4 5
+> x = seq(from=5, to=50, by=5)
+> print(x)
+ [1]  5 10 15 20 25 30 35 40 45 50
+> # or
+> x = seq(5, 50, 5)
+> print(x)
+ [1]  5 10 15 20 25 30 35 40 45 50
+> # length argument
+> x = seq(5, 100, length=10)
+> x
+ [1]   5.00000  15.55556  26.11111  36.66667  47.22222  57.77778  68.33333
+ [8]  78.88889  89.44444 100.00000
+> x = seq(1.0, 2.0, 0.1)
+> x
+ [1] 1.0 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2.0
+> # by or third argument cannot be zero.
+> # !!!ERROR!!!
+> # x = seq(1, 5, 0) # occur an error
+```
+
+### Replicate Function
+
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
 [2]: https://youtu.be/NVyOEwOJgNQ
