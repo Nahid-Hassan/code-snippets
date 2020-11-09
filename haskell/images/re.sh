@@ -1,0 +1,16 @@
+convert 1.png -resize 900X350\! 1.png
+convert 2.png -resize 900X350\! 2.png
+convert 3.png -resize 900X350\! 3.png
+convert 4.png -resize 900X350\! 4.png
+convert 5.png -resize 900X350\! 5.png
+convert 6.png -resize 900X350\! 6.png
+convert 7.png -resize 900X350\! 7.png
+convert 8.png -resize 900X350\! 8.png
+convert 9.png -resize 900X350\! 9.png
+convert 10.png -resize 900X350\! 10.png
+convert 11.png -resize 900X350\! 11.png
+convert 12.png -resize 900X350\! 12.png
+convert 13.png -resize 900X350\! 13.png
+convert 14.png -resize 900X350\! 14.png
+convert 15.png -resize 900X350\! 15.png
+convert 16.png -resize 900X350\! 16.png
