@@ -44,3 +44,6 @@ print(myeval(10,2))
 # inline function
 mysum = function(x, y) x + y
 myexp = function(x, y) x ^ y
+
+print(mysum(10, 20))
+print(myexp(2,3))
