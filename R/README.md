@@ -402,7 +402,177 @@ Error in !"nahid" : invalid argument type
 
 ![control structures](images/control-sturctures.png)
 
-### if-else 
+### `if-else` (same as C/Java/C++)
+
+```r
+x <- 0
+
+if (x > 0) {
+    print("x is positive")
+} else if (x == 0) {
+    print("x is zero")
+} else {
+    print("number is negative")
+}
+print("End of the program")
+```
+
+### `ifelse()` function
+
+```r
+x <- 10
+
+# ifelse(condition, 'true', 'false')
+# check number is positive or negative
+ifelse(x >= 0, 'Number is Positive', 'Number is Negative')
+
+# check odd and even number
+ifelse(x%%2==0, 'Number is even', 'Number is odd')
+```
+
+### `for` loop
+
+```r
+
+# for loop # 1
+
+for (i in 1:5) {
+    print(i)
+}
+
+x = 1:3
+
+for (i in x) {
+    print(i)
+}
+
+x = letters
+
+for (i in x) {
+    print(i)
+}
+
+# grasp first five character
+y = x[1:5]
+
+for (i in y) {
+    print(i)
+}
+```
+
+### `while` loops
+
+```r
+x <- 1 # initialization
+
+# while(condition) { # if condition is true while loop is work 
+    # write your code here
+#}
+
+while (x <= 5) {
+    print(x)
+    x <- x + 1
+}
+
+print("End of the loop")
+```
+
+### `repeat` loops
+
+```r
+i <- 1
+
+# print 1 ... 5
+# in repeat loop we need break statement 
+repeat {
+    print(i)
+    if (i > 5) {
+        break
+    }
+    i <- i + 1
+}
+```
+
+### `break` and `next` Statements
+
+**`next` is same as `continue` keyword. 
+
+```r
+# next is same is continue in C language
+
+# print odd number between 1 to 10
+for (i in 1 : 10) {
+    if (i %% 2 == 0) {
+        next
+    }
+    print(i)
+}
+```
+
+### `function` in R
+
+![function](images/func-1.png)
+![function](images/func-2.png)
+![function](images/func-3.png)
+![function](images/func-4.png)
+![function](images/func-5.png)
+
+```r
+mysum = function(x, y=2) {
+    z <- x + y
+    return(z)
+}
+
+ret = mysum(3,5)
+print(ret)
+
+ret = mysum(y=10, x=10)
+print(ret)
+
+# if we not pass any value for y. y take it default values
+mysum = function(x, y=2) {
+    z <- x + y
+    return(z)
+}
+
+ret = mysum(3)
+print(ret)
+
+# ret = mysum() # ERROR!!! at least pass an one value for parameter `x`
+
+# Another check
+mysum = function(x=1, y, z=5) {
+    z <- x + y + z
+    return(z)
+}
+
+ret = mysum(y=3) # we don't pass mysum(3) something like this
+print(ret)
+```
+
+### Function Returning Multiple Value
+
+```r
+# function return multiple value
+myeval = function(x, y) {
+    add = x + y
+    mul = x * y
+    result = list('sum'=add, 'mul'=mul)
+    return(result)
+}
+
+print(myeval(10,2))
+```
+
+### inline function
+
+```r
+mysum = function(x, y) x + y
+myexp = function(x, y) x ^ y
+
+print(mysum(10, 20))
+print(myexp(2,3))
+```
 
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
