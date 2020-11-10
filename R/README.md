@@ -574,6 +574,84 @@ print(mysum(10, 20))
 print(myexp(2,3))
 ```
 
+### Vector
+
+![images](images/vector1.png)
+
+![images](images/vector2.png)
+
+![images](images/vector3.png)
+
+```sh
+> # typeof(..) return atomic types of the variable
+> x <- 10
+> typeof(x) # integer
+[1] "double"
+> x <- 10.5
+> typeof(x) # double
+[1] "double"
+> x <- T
+> typeof(x) # logical
+[1] "logical"
+> x <- 'Mahin'
+> typeof(x) # character
+[1] "character"
+> # create a vector in R
+> # using c(....)
+> x <- c(10,20,20)
+> x
+[1] 10 20 20
+> typeof(x)
+[1] "double"
+> # using assign
+> assign('y', c(20, 23.4, 2))
+> typeof(y)
+[1] "double"
+> assign('t', c('a', 10, 39, 2.4))
+> typeof(t)
+[1] "character"
+> # using sequence of number
+> y <- 1:6
+> typeof(y)
+[1] "integer"
+> y
+[1] 1 2 3 4 5 6
+> z <- seq(3, 6)
+> z
+[1] 3 4 5 6
+> typeof(z)
+[1] "integer"
+> w = c(y, z)
+> w
+ [1] 1 2 3 4 5 6 3 4 5 6
+> ### multiple assign
+> x <- y <- z <- c(seq(1,6))
+> x
+[1] 1 2 3 4 5 6
+> y
+[1] 1 2 3 4 5 6
+> z
+[1] 1 2 3 4 5 6
+> #### using `vector`
+> ### vector(mode, length=integer) # default 0, FALSE, empty string
+> x <- vector('numeric', length = 4)
+> x
+[1] 0 0 0 0
+> x <- vector('logical', length = 4)
+> x
+[1] FALSE FALSE FALSE FALSE
+> x <- vector('character', length = 4)
+> x
+[1] "" "" "" ""
+> x <- vector('double', length = 4)
+> x
+[1] 0 0 0 0
+> ## length()
+> length(x)
+[1] 4
+> ### In R programming language indexing starting from 1. Not Zero
+```
+
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
 [2]: https://youtu.be/NVyOEwOJgNQ
