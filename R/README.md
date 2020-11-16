@@ -738,6 +738,48 @@ y %in% x # TRUE, TRUE, FALSE, TRUE
 
 ### Vector Arithmetics
 
+```r
+x <- c(10, 20, 30, 40)
+x
+x + 2
+
+x + c(1,2,3,4)
+
+sum(x) # 100
+prod(x) # 240000
+mean(x) # 25
+length(x) # 4
+
+# x + c(10, 20, 30) # ERROR!!!
+rev(x) # 40 30 20 10
+sort(x) # 10 20 30 40
+sort(x, decreasing = TRUE)
+sqrt(x) # 3.162278 4.472136 5.477226 6.324555
+
+y <- c(1,3,3, 2)
+
+x %*% y # dot product # 240
+
+# crossprod
+crossprod(x, y) # 240
+
+# outer product
+x %o% y
+
+#[,1] [,2] [,3] [,4]
+#[1,]   10   30   30   20
+#[2,]   20   60   60   40
+#[3,]   30   90   90   60
+#[4,]   40  120  120   80
+
+tcrossprod(x, y)
+#[,1] [,2] [,3] [,4]
+#[1,]   10   30   30   20
+#[2,]   20   60   60   40
+#[3,]   30   90   90   60
+#[4,]   40  120  120   80
+```
+
 <!-- url/paths -->
 [1]: https://cran.r-project.org/mirrors.html
 [2]: https://youtu.be/NVyOEwOJgNQ
