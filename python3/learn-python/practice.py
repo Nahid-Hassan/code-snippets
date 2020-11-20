@@ -1,12 +1,32 @@
-import collections
-import sys
+from dataclasses import dataclass, field
 
-def main(letters, words):
-        d = collections.defaultdict(list)
-        print(d)
 
-        print(letters)
-        print(words)
+@dataclass
+class Person:
+    name: str
+    city: str
+    age: int
+    is_senior: bool = field(init=False)
 
-if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2:])
+    def __post_init__(self):
+        if self.age >= 60:
+            self.is_senior = True
+        else:
+            self.is_senior = False
+
+
+p = Person('Mahin', 'Jamalpur', 69)
+print(p.is_senior)
+
+@dataclass
+class C:
+    a: float
+    b: float
+    c: float = field(init=False)
+
+    def __post_init__(self):
+        self.c = self.a + self.b
+
+print('work')
+c = C(10, 20)
+print(c)
