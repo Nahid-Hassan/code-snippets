@@ -4,6 +4,8 @@ next: <https://www.youtube.com/watch?v=CqvZ3vGoGs0&list=PL-osiE80TeTt2d9bfVyTiXJ
 
 advanced_python: <https://www.youtube.com/watch?v=mclfteWlT2Q&list=PLzMcBGfZo4-kwmIcMDdXSuy_wSqtU-xDP&ab_channel=TechWithTim>
 
+meta_programming: <https://www.youtube.com/playlist?list=PLL2hlSFBmWwyJ9dh3Rrr1sw8l4e4SLMx1>
+
 ## Export `PYTHONPATH` variable rather than to append path in sys.path.append()
 
 ![images](images/1.gif)
