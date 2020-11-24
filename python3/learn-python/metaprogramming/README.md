@@ -40,5 +40,29 @@ What is metaprogramming?
 
 ![images](images/1.png)
 
+**Constructor**:
+
+![images](images/2.png)
+
+**Fields**:
+
+![images](images/3.png)
+
+**Methods**:
+
+![images](images/4.png)
+
+**`__init__` vs `__new__`**:
+
+![images](images/5.png)
+
+![images](images/6.png)
+
+**Everything is an Object**:
+
+![images](images/7.png)
+
+![images](images/8.png)
+
 <!-- urls/paths -->
 [1]: https://youtu.be/zcnCdHlpqrY?list=PLLet_jPomQZ-5hoX1HM-Vg_jYHGntvuw3
