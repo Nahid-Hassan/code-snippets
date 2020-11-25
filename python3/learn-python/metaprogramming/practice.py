@@ -14,18 +14,18 @@
 # person = Person('Mahin', 23)
 # print(len(person))
 
-class Test:
+# class Test:
 
-    """ cls: class Test itself. Not object of class Test. It class itself """
-    def __new__(cls, x):
-        print(f'__new__, cls={cls}')
-        return super().__new__(cls)
+#     """ cls: class Test itself. Not object of class Test. It class itself """
+#     def __new__(cls, x):
+#         print(f'__new__, cls={cls}')
+#         return super().__new__(cls)
 
-    def __init__(self, x):
-        print(f'__init__, self={self}')
-        self.x = x
+#     def __init__(self, x):
+#         print(f'__init__, self={self}')
+#         self.x = x
 
-    def __repr__(self):
-        return f'name is name'
+#     def __repr__(self):
+#         return f'name is name'
 
-test = Test(2)
+# test = Test(2)
