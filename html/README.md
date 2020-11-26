@@ -6,6 +6,7 @@
   - [Different Html Tag And It'S Output](#different-html-tag-and-its-output)
     - [1. `<marquee> ... </marquee>` Tag](#1-marquee--marquee-tag)
     - [1. Introduction](#1-introduction)
+    - [Basics](#basics)
 
 ### 1. `<marquee> ... </marquee>` Tag
 
@@ -60,6 +61,43 @@ To learn more about marquee please visit:
 **Preview**:
 
 ![media](./media/1.png)
+
+### Basics
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the page title</title>
+    </head>
+    <body>
+        <!-- heading tag -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!-- paragraph tag -->
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+
+        <!-- html links -->
+        <a href="https://www.w3schools.com">This is a link</a>
+
+        <!-- bracket tag -->
+        <br>
+
+        <!-- image tag -->
+        <img src="../media/4.png" alt="W3Schools.com" width="500" height="200">
+    </body>
+</html>
+```
+
+**Preview**:
+
+![images](media/6.png)
 
 <!-- urls/paths -->
 [1]: https://www.plus2net.com/html_tutorial/html_marquee_behvr.php
