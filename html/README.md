@@ -2,6 +2,11 @@
 
 ## Different Html Tag And It'S Output
 
+- [HTML Tag Example](#html-tag-example)
+  - [Different Html Tag And It'S Output](#different-html-tag-and-its-output)
+    - [1. `<marquee> ... </marquee>` Tag](#1-marquee--marquee-tag)
+    - [1. Introduction](#1-introduction)
+
 ### 1. `<marquee> ... </marquee>` Tag
 
 **Example~1 - `marquee` tag**:
@@ -36,6 +41,25 @@ To learn more about marquee please visit:
 
 1. [Marquee Behavior to move text in different styles][1]
 2. [The Marquee element (Obsolete)][2]
+
+### 1. Introduction
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>My First Heading</h1>
+        <p>My First Paragraph</p>
+    </body>
+</html>
+```
+
+**Preview**:
+
+![media](./media/1.png)
 
 <!-- urls/paths -->
 [1]: https://www.plus2net.com/html_tutorial/html_marquee_behvr.php
