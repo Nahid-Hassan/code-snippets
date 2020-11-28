@@ -265,6 +265,14 @@ if __name__ == "__main__":
 </p>
 </details>
 
+# Warning Message
+
+| :exclamation:  This is very important |
+| ------------------------------------- |
+
+| :zap:        Ignore at your own risk! |
+| ------------------------------------- |
+
 # Matrix in Markdown
 
 $$
