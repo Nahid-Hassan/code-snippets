@@ -55,7 +55,13 @@
 		],
 		"description": "insert image in markdown"
 	},
-		
+	"Insert Youtube Video in Markdown": {
+		"prefix": "youtube-video",
+		"body": [
+			"[![Image Alt Text Here](https://img.youtube.com/vi/${0:Put youtube video id}/0.jpg)](https://www.youtube.com/watch?v=${0:Put youtube video id})"
+		],
+		"description": "insert youtube video in markdown"
+	},
 	// "For Loop": {
 	// 	"prefix": "for",
 	// 	"body": [
@@ -66,5 +72,4 @@
 	// 	],
 	// 	"description": "For Loop"
 	// },
-
 }
