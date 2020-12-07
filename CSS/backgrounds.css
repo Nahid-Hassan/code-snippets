@@ -1,0 +1,50 @@
+/* body { */
+/* use color as a background */
+/* background-color: #dacf00; */
+
+/* use image as a background */
+/* background-image: url("./images/workspace-300x200.jpg"); */
+/* background-image: url("./images/workspace.jpg"); */
+
+/* use background-repeat property */
+/* 
+  1. repeat-x, repeat image only x-axis or horizontally
+  2. repeat-y, repeat image only y-axis/vertically
+  3. repeat: repeat x-y side
+  4. no-repeat: for no repeat of this image*/
+/* background-repeat: no-repeat; */
+
+/* background-position: top; */
+/* 
+  ----------------------------------------
+  |top left      top-center     top-right|
+  ----------------------------------------
+  1. top: left */
+/* background-position: top center; */
+/* } */
+
+/* .workspace { */
+  /* must be set these property */
+  /* at least height or width size is hardcoded. */
+
+  /* height: 300px;
+  width: auto;
+  background-image: url("/images/workspace-300x200.jpg");
+  background-size: 300 auto; */
+
+  /*other-properties*/
+  /* background-attachment 
+   1. fixed: fixed in image position
+   2. scroll(default): scroll with scrolling position or movement*/
+   
+  /* background-attachment: scroll; */
+  /* background-repeat: no-repeat; */
+  /* background-position: top center; to see the effect you need to uncomment background-repeat: no-repeat; */
+/* } */
+
+/* put all the property in one line */
+body {
+  /* background: color url() repeat position /enter size*/
+  background: #27294b url(./images/workspace-300x200.jpg) no-repeat top center /
+  500px auto;
+}
