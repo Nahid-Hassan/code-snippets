@@ -1,0 +1,34 @@
+body {
+  /* no default margin (clock wise movement) */
+  margin: 0px;
+}
+
+.margin-1 {
+  width: 60%;
+  height: 300px;
+  background: rgba(58, 80, 9, 0.267);
+
+  /* set box in center position */
+  /* margin: up-down left-right */
+  margin: 0 auto; /*auto work in left-right*/ 
+}
+
+.margins {
+  width: 300px;
+  height: 300px;
+  background: rgba(58, 80, 9, 0.267);
+
+  /* --------------------------------------------------- */
+  /* margin property */
+  margin-top: 40px; /*Down 40 px from top position*/
+  margin-left: 20px; /*Shift 20px from left side*/
+  margin-right: 200px;
+  margin-bottom: 20px;
+
+  /* --------------------------------------------------- */
+  /* rather than use margin-top, bottom, left, right use 
+  margin: top right bottom left
+  margin: top-bottom left-right
+  margin: top left-right bottom*/
+  margin: 20px 40px;
+}
