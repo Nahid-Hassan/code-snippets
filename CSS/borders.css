@@ -1,0 +1,58 @@
+.border {
+  /* --------------------------------------------------- */
+  /* elementary property */
+  border-width: 5px;
+  border-style: solid;
+  /* now you see the black border outside the text */
+
+  /* change border-color */
+  border-color: #091099;
+
+  /* --------------------------------------------------- */
+  /* change border square angle */
+  /* see the round in the border angle */
+  border-radius: 10px;
+
+  /* --------------------------------------------------- */
+  /* using "border" property rather than using border-width, border-style-border-color 
+  
+  border: border-width  border-style border-color
+  */
+  border: 10px solid #329909;
+
+  /* --------------------------------------------------- */
+  /* border-style 
+  1. solid: like_a_bold_arrow
+  2. dotted: dot dot dot .....
+  3. dashed: dash (_) dash dash 
+  4. ridge: under 10 pixels it looks like solid but increase the pixel .. you can see the effect.
+  5. inset: like solid ... + some other effects
+  6. none: for no style
+  7. double: for double line
+  */
+  border-style: solid;
+
+  /* --------------------------------------------------- */
+  /* border-width (clock wise movement)
+  1. border-width: up-down left-right; ex: 10px 20px
+  2. border-width: up left-right down; ex: 10px 20px 30px
+  3. border-width: up right down left; ex: 10px 20px 30px 40px
+  */
+  border-width: 4px 8px 12px 16px;
+  /* --------------------------------------------------- */
+  /* again border-style (work same style as `border-width')
+        (clock wise movement)
+        up ----> right -----> down -----> left
+
+  1. border-style: up-down left-right; ex; dotted solid
+  */
+  border-style: dotted solid dashed inset;
+
+  /* --------------------------------------------------- */
+  /* same for border color (clock wise movement) */
+  border-color: red blue yellowgreen pink;
+
+  /* --------------------------------------------------- */
+  /* same for border-radius: (clock wise movement); */
+  border-radius: 10px 20px 30px 40px;
+}
