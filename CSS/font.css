@@ -1,0 +1,16 @@
+h1 {
+  /* font-family: font_name */
+  font-family: Ubuntu;
+
+  /* font-size: pixel_size, 1em, 2em; */
+  font-size: 50px;
+
+  /* font-style: italic, normal; */
+  font-style: italic;
+
+  /* font-weight: normal, bold; */
+  font-weight: normal; 
+
+  /* font-variant: small-caps; */
+  font-variant: small-caps;
+}
