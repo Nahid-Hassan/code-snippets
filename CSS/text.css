@@ -1,0 +1,48 @@
+p {
+  /* color: red; */
+  color: blueviolet;
+
+  /* text-align: center, left, right, justify ; */
+  /* text-align: center; */
+  text-align: justify;
+
+  /* text-transform: uppercase, lowercase, capitalize; */
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
+
+  /* text-indent: 10px; */
+  text-indent: 10px;
+
+  /* line-height: 10px or 1, 1.5, 2 
+  font-size = 1, font-size * 2 = 2
+  */
+
+  /* font-size: 10px; */
+
+  font-size: 18px;
+
+  /*both are same  */
+  line-height: 2;
+  line-height: 36px;
+}
+
+a {
+  /* text-decoration: none, underline, overline, line-through; */
+  /* text-decoration: none; */
+  text-decoration: none;
+  color: blue;
+
+  /* create shadow 
+  text-shadow: left-right up-down color;*/
+  text-shadow: 2px 1px red;
+  font-weight: bold;
+}
+
+pre {
+  /* letter-spacing: 5px, -5px; */
+  letter-spacing: 10px;
+
+  /* create gap between two word */
+  /* word-spacing: 10px, -39px; */
+  word-spacing: 30px;
+}
