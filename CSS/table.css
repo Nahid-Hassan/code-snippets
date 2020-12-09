@@ -1,0 +1,18 @@
+table, td, th {
+  /* add border */
+  border: 1px solid gray;
+
+  /* text align */
+  text-align: left;
+}
+
+table {
+  width: 100%;
+
+  /* double line border to single line border */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
