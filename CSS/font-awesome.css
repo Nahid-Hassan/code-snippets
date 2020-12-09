@@ -1,0 +1,40 @@
+/* fab fa-google */
+
+.fa-google {
+  font-size: 50px;
+  color: blue;
+}
+
+/* fab fa-apple */
+.fa-apple {
+  font-size: 50px;
+  color: brown;
+}
+
+/* change on both icons */
+.fab {
+  font-style: oblique;
+}
+
+.google {
+  height: 200px;
+  width: 200px;
+  border: 1px solid blue;
+  float: left;
+}
+
+.quote {
+  margin-left: 10px;
+  height: 200px;
+  width: 500px;
+  float: left;
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+.apple {
+  height: 200px;
+  width: 200px;
+  border: 1px solid blue;
+  float: right;
+}
