@@ -1,0 +1,17 @@
+ul {
+  /* list-style-type; circle, none, square, upper-roman, lower-roman, lower-alpha, upper-alpha*/
+  list-style-type: none;
+
+  /* we can also use image for bullet point */
+  list-style-image: url(./images/star-10x10.png);
+
+  /* list-style-position: inside, outside; */
+  list-style-position: inside;
+
+  /* list-style all in one */
+  /* list-style: square/lower-alpha...etc  inside or outside   url(image-path) ;
+  
+  if image is found square/lower-alpha this type bullet point is not work...if image not found then those bullet point is work.
+  */
+  list-style: lower-alpha inside url(./images/star-10x10.png);
+}
