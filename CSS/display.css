@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    /* display: none; for hide something     */ 
+
+    /* convert h1 to inline element */
+    display: inline;
+    /* display: inline, none, block, inline-block */
+}
+
+span {
+    /* sudu text-align: center property span tag er khetre kuno kaje lagbe na...karon span tag holo ekta inline tag ... eitake amra block tag a convert korte parle then ei property kaj korbe; */
+    text-align: center;
+
+    /* display: block; */
+}
+
+ul li {
+    display: inline;
+}
