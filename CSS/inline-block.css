@@ -1,0 +1,53 @@
+span.a {
+  width: 100px;
+  height: 100px;
+  display: inline;
+  background: yellow;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+span.b {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background: yellow;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+span.c {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: yellow;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.menu {
+  background: yellow;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li:hover {
+    background: black;
+}
+
+ul li:hover a {
+    color: white;
+}
