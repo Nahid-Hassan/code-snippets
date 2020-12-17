@@ -1,0 +1,12 @@
+.ovrflw {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+
+  /* overflow: visible(default), hidden, auto, scroll */
+  /* auto vs scroll, auto is enable when it's needed but scroll is always enable */
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  overflow: auto;
+}
