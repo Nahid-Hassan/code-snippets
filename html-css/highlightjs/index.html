@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- you can add particular color schemes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/vs.min.css">
+</head>
+
+<body>
+
+</body>
+
+<pre>
+    <code class="html">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="fun">
+            <li>
+
+            </li>
+        </div>
+    </code>
+</pre>
+
+
+<!-- must provided.......... -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+
+    document.querySelectorAll("code").forEach(function (element) {
+        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+</script>
+
+</html>
