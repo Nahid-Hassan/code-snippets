@@ -3,6 +3,7 @@
 - [HTML Elements Reference](#html-elements-reference)
   - [Main Root](#main-root)
     - [`<html>`: The HTML Document / Root Element](#html-the-html-document--root-element)
+  - [Document metadata](#document-metadata)
 
 ## Main Root
 
@@ -26,3 +27,8 @@ The HTML `<html>` element represents the root (top-level element) of an HTML doc
   <body>...</body>
 </html>
 ```
+
+## Document metadata
+
+Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information. 
+
